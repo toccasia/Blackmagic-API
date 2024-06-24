@@ -13,7 +13,6 @@ const sendHttpRequest = (method, url, data) => {
     })
         .then((response) => {
             return response;
-            console.log(body)
         })
 }
 
