@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livestream</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/livestreamScript.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="main">
+                <div class="main-content">
+                    <img class="logo" src="https://images.blackmagicdesign.com/images/common/logos/gn-logo.svg?_v=1602569927" alt="Blackmagic Design">
+                    <h1 class="header_text">WebPresenters</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex-container">
+            <div class="navigation-box">
+                <h2 class="navigation-header">Menu</h2>
+                <a id="home-page" class="link-button" href="index.html">Home</a>
+                <a class="link-button" href="livestream.html">Livestream</a>
+                <a class="link-button" href="presets.html">Presets</a>
+            </div>
+
+            <div class="content-box">
+
+                <button id="livestream-refresh-bttn" style="margin-top: 10px">Refresh</button>
+
+                <br><br>
+
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>WebPresenter A</th>
+                        <th>WebPresenter B</th>
+                        <th>WebPresenter C</th>
+                    </tr>
+                    <tr>
+                        <td>Stream Standard</td>
+                        <td id="wp-a-ss"></td>
+                        <td id="wp-b-ss"></td>
+                        <td id="wp-c-ss"></td>
+                    </tr>
+                    <tr>
+                        <td>Platform</td>
+                        <td id="wp-a-p"></td>
+                        <td id="wp-b-p"></td>
+                        <td id="wp-c-p"></td>
+                    </tr>
+                    <tr>
+                        <td>Server</td>
+                        <td id="wp-a-s"></td>
+                        <td id="wp-b-s"></td>
+                        <td id="wp-c-s"></td>
+                    </tr>
+                    <tr>
+                        <td>Key</td>
+                        <td id="wp-a-k"></td>
+                        <td id="wp-b-k"></td>
+                        <td id="wp-c-k"></td>
+                    </tr>
+                    <tr>
+                        <td>Passphrase</td>
+                        <td id="wp-a-pp"></td>
+                        <td id="wp-b-pp"></td>
+                        <td id="wp-c-pp"></td>
+                    </tr>
+                    <tr>
+                        <td>Quality</td>
+                        <td id="wp-a-q"></td>
+                        <td id="wp-b-q"></td>
+                        <td id="wp-c-q"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

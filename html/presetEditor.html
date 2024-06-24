@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preset Editor</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/presetEditorScript.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <div class="main">
+        <div class="main-content">
+            <img class="logo" src="https://images.blackmagicdesign.com/images/common/logos/gn-logo.svg?_v=1602569927" alt="Blackmagic Design">
+            <h1 class="header_text">WebPresenters</h1>
+        </div>
+    </div>
+</header>
+
+<div class="flex-container">
+    <!--<div class="navigation-box">
+        <h2 class="navigation-header">Menu</h2>
+        <a id="home-page" class="link-button" href="index.html">Home</a>
+        <a class="link-button" href="livestream.html">Livestream</a>
+        <a class="link-button" href="presetEditor.html">Presets</a>
+    </div>-->
+
+    <div class="content-box">
+
+        <a class="link-button" href="presets.html">Temp Presets</a>
+
+        <form>
+            <h4>Video Output</h4>
+            <label for="resolution">Stream Standard: </label>
+            <select name="resolution" id="resolution" class="selectlist">
+                <option value="Auto">Auto Mode</option>
+                <option value="1280x720p25">720p25</option>
+                <option value="1280x720p30">720p30</option>
+                <option value="1280x720p50">720p50</option>
+                <option value="1280x720p60">720p60</option>
+                <option value="1920x1080p23.98">1080p23.98</option>
+                <option value="1920x1080p24">1080p24</option>
+                <option value="1920x1080p25">1080p25</option>
+                <option value="1920x1080p29.97">1080p29.97</option>
+                <option value="1920x1080p30">1080p30</option>
+                <option value="1920x1080p50">1080p50</option>
+                <option value="1920x1080p29.97">1080p59.94</option>
+                <option value="1920x1080p60">1080p60</option>
+            </select>
+
+            <h4>Livestream</h4>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="platform">Platform: </label>
+                    </td>
+                    <td>
+                        <select name="platform" id ="platform" class="selectlist">
+                            <option value="YouTube RTMP">YouTube RTMP</option>
+                            <option value="YouTube SRT (Beta)">YouTube SRT (Beta)</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Microsoft Teams">Microsoft Teams</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Twitch">Twitch</option>
+                            <option value="X (Twitter)">X (Twitter)</option>
+                            <option value="Restream.IO">Restream.IO</option>
+                            <option value="Vimeo">Vimeo</option>
+                            <option value="BoxCast">BoxCast</option>
+                            <option value="Castr">Castr</option>
+                            <option value="AfreecaTV">AfreecaTV</option>
+                            <option value="Bilibili">Bilibili</option>
+                            <option value="DouYu">DouYu</option>
+                            <option value="Weibo">Weibo</option>
+                            <option value="Custom URL H.264">Custom URL H.264</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="server">Server: </label>
+                    </td>
+                    <td>
+                        <select name="server" id ="server" class="selectlist">
+                            <option value="Primary">Primary</option>
+                            <option value="Secondary">Secondary</option>
+                            <option value="Default">Default</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="key">Key:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="key" name="key" value=""><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="quality">Quality: </label>
+                    </td>
+                    <td>
+                        <select name="quality" id ="quality" class="selectlist">
+                            <option value="HyperDeck High">HyperDeck High</option>
+                            <option value="HyperDeck Medium">HyperDeck Medium</option>
+                            <option value="HyperDeck Low">HyperDeck Low</option>
+                            <option value="Streaming High">Streaming High</option>
+                            <option value="Streaming Medium">Streaming Medium</option>
+                            <option value="Streaming Low">Streaming Low</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+
+            <button type="submit" id="save-preset-bttn">Save Preset</button>
+            <button type="reset" id="reset-preset-bttn">Reset</button>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "presets": [
+  {
+    "name" : "AU YouTube",
+    "stream_standard": "1080p60",
+    "platform": "YouTube RTMP",
+    "server": "Primary",
+    "key": "yt-test-12345",
+    "quality": "Streaming High"
+  },
+  {
+    "name": "AU Facebook",
+    "stream_standard": "1080p60",
+    "platform": "Facebook",
+    "server": "Default",
+    "key": "fb-test-12345",
+    "quality": "Streaming High"
+  }
+],
+
+  "platforms": [
+    {
+      "name:": "YouTube",
+      "bitrate": "123",
+      "servers": ["Primary", "Secondary"]
+    },
+    {
+      "name:": "Facebook",
+      "bitrate": "456",
+      "servers": ["Default"]
+    }
+  ]
+}
